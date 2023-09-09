@@ -9,4 +9,17 @@ public class PlayerTank : MonoSingletonGeneric<PlayerTank>
         base.Awake();
         //Custom Logic
     }
+
+    /*private void Update()
+    {
+        if (Input.touchCount > 0) 
+        { 
+            Touch touch = Input.GetTouch(0);
+            Vector3 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+            Debug.Log(touchPos);
+            touchPos.y = 0f;
+            transform.position = touchPos;
+
+        }
+    }*/
 }
